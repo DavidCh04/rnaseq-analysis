@@ -22,3 +22,8 @@ The RNA-seq data was obtained from a public GEO dataset. (Exact accession number
 
 ## Status
 Work in progress
+
+## Research Question
+Which genes are differentially expressed between two experimental conditions in an RNA-seq experiemnt using public data?
+
+This project focuses on applying a standard RNA-seq workflow to answer a biologically relevant question in a reproducible way.
