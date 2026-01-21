@@ -24,8 +24,8 @@ The RNA-seq data was obtained from a public GEO dataset. (Exact accession number
 Searching the dataset for the experiment.
 
 ## Dataset
-**GEO:** GSE266108
-**Link:** [GEO Dataset](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266108)
+**GEO:** GSE266108\
+**Link:** [GEO Dataset](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266108)\
 **Summary:** In process.
 
 
