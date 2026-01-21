@@ -21,7 +21,13 @@ The RNA-seq data was obtained from a public GEO dataset. (Exact accession number
 - Snakemake (¿?)
 
 ## Status
-Work in progress
+Searching the dataset for the experiment.
+
+## Dataset
+**GEO:** GSE266108
+**Link:** [GEO Dataset](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266108)
+**Summary:** In process.
+
 
 ## Research Question
 Which genes are differentially expressed between two experimental conditions in an RNA-seq experiemnt using public data?
@@ -30,3 +36,4 @@ This project focuses on applying a standard RNA-seq workflow to answer a biologi
 
 ## VS Studio
 This last line is edited and updated exclusively from VS Studio. It´s a try out.
+
