@@ -27,3 +27,6 @@ Work in progress
 Which genes are differentially expressed between two experimental conditions in an RNA-seq experiemnt using public data?
 
 This project focuses on applying a standard RNA-seq workflow to answer a biologically relevant question in a reproducible way.
+
+## VS Studio
+This last line is edited and updated exclusively from VS Studio. It´s a try out.
