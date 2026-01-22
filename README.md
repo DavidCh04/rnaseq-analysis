@@ -26,7 +26,7 @@ Searching the dataset for the experiment.
 ## Dataset
 **GEO:** GSE266108\
 **Link:** [GEO Dataset](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266108)\
-**Summary:** In process.
+**Summary:** This study investigates the role of sodium butyrate (NaB) in diabetic kidney disease (DKD), a condition characterized by impaired lipid metabolism and defective lipophagy. Using glucolipotoxicity (GLT)-stimulated human renal tubular epithelial cells (HK-2), RNA-seq was performed to compare gene expression profiles with and without NaB treatment. The results show that NaB improves lipid accumulation and renal dysfunction by restoring lipophagy, likely through activation of the PP2A–TFEB signaling pathway. This dataset enables the analysis of differential gene expression associated with NaB treatment in a controlled cellular model of DKD.
 
 
 ## Research Question
