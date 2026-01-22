@@ -15,7 +15,7 @@ This project implements an RNA-seq analysis workflow using publicly available da
 
 **Experimental design:** RNA-seq was performed on GLT-stimulated HK-2 cells, comparing three biological replicates treated with sodium nutyrate (NaB_GLT) against three untreated controls (BSA_GLT).
 
-**Sample information**: A clean sample annotation table ['samples.csv'](samples.csv) was generated form the original SRA metadata and contains the run accesions an experimental conditions used in this analysis.
+**Sample information**: A clean sample annotation table `data/samples.csv` was generated form the original SRA metadata and contains the run accesions an experimental conditions used in this analysis.
 
 ## Analysis plan
 1. Quality control of raw reads.
