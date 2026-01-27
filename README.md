@@ -25,9 +25,12 @@ This project implements an RNA-seq analysis workflow using publicly available da
 5. Visualization of results and interpretation.
 
 ## 1.Quality control of raw reads.
-Raw FASTQ files were assesed using FastQC.
-All samples showed high per-base sequence quality, with no major warnings or failures.
-The data were considered suitable for downstream RNA-seq analysis without additional preprocessing.
+
+Raw FASTQ files were assessed using FastQC v0.12.1.
+All samples (n=6) showed high per-base sequence quality (Phred scores >30 across most positions).
+No adapter contamination or significant overrepresented sequences were detected.
+Per-sequence GC content and sequence duplication levels were within expected ranges for RNA-seq data.
+The data were considered suitable for quantification without additional trimming or filtering.
 
 
 ## Goal
