@@ -24,6 +24,12 @@ This project implements an RNA-seq analysis workflow using publicly available da
 4. Differential expression analysis.
 5. Visualization of results and interpretation.
 
+## 1.Quality control of raw reads.
+Raw FASTQ files were assesed using FastQC.
+All samples showed high per-base sequence quality, with no major warnings or failures.
+The data were considered suitable for downstream RNA-seq analysis without additional preprocessing.
+
+
 ## Goal
 This project is designed as a learning and portfolio project to demonstrate practicall skills in RNA-seq data handling, experimental design interpretation, and differential expression analysis.
 
