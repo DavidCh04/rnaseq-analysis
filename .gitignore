@@ -1,23 +1,42 @@
-# Raw data (FASTQ files)
+# ===========================
+# Raw data
+# ===========================
 *.fastq
 *.fastq.gz
 *.fq
 *.fq.gz
+data/raw_fastq/
 
-# FastQC outputs
-*_fastqc.html
-*_fastqc.zip
-*_fastqc/
-
-# Salmon outputs (quantifications - opcional, ver nota abajo)
+# ===========================
+# References and indexes
+# ===========================
+references/
 salmon_index/
-quants/
 
+# ===========================
+# Salmon quantifications
+# ===========================
+results/salmon_quants/
+
+# ===========================
 # R temporary files
-.Rhistory
+# ===========================
 .RData
-.Rproj.user
+.Rhistory
+.Rproj.user/
+*.Rproj
+scripts/.Rhistory
 
+# ===========================
+# Old/backup scripts
+# ===========================
+*_OLD.R
+*_old.R
+*.backup
+scripts/Script rna-seq.R
+
+# ===========================
 # System files
+# ===========================
 .DS_Store
 Thumbs.db
