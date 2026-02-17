@@ -32,7 +32,7 @@ Identify differentially expressed genes and biological pathways modulated by sod
 - **Reference:** GENCODE v46 human transcriptome (GRCh38)
 - **Differential Expression:** DESeq2 v1.42.0 (R v4.3.1)
 - **Pathway Enrichment:** clusterProfiler v4.10.0
-- **Environment:** Ubuntu 24 (WSL)
+- **Environment:** Ubuntu 24 (WSL), R v4.3.1, RStudio 2024.04.2, Conda
 
 ### Workflow
 1. **Quality Control:** FastQC on raw FASTQ files
@@ -68,29 +68,29 @@ While slightly more genes were downregulated, upregulated genes showed significa
 
 Several highly significant genes align with epithelial protection, lipid metabolism, and stress response:
 
-**Epithelial Barrier Protection**
+**3.1 - Epithelial Barrier Protection**
 
 **CLDN4 (Claudin-4, log2FC = 2.1, padj = 6e-65):** Tight junction protein essential for renal tubular barrier integrity and paracellular ion transport. In type 1 diabetes, CLDN4 is overexpressed through aldosterone-SGK1-WNK4 signaling, contributing to tubular dysfunction. NaB-induced upregulation (~4-fold) may restore epithelial barrier function compromised by glucolipotoxic stress, protecting against tubular permeability defects.
 
-**Lipophagy and Lipid Metabolism**
+**3.2 - Lipophagy and Lipid Metabolism**
 
 **PLIN2 (Perilipin-2, log2FC = 0.76, padj = 2e-20):** Lipid droplet coat protein that regulates formation and stability of intracellular lipid droplets. Chronically elevated in DKD, reflecting ectopic lipid accumulation. NaB-induced increase may represent a compensatory mechanism to organize toxic lipids into accessible lipid droplets for subsequent autophagic degradation via the PP2A-TFEB pathway.
 
 **ACSL5 (Acyl-CoA Synthetase Long-Chain 5, log2FC = -0.61, padj = 0.004):** Mitochondrial enzyme activating long-chain fatty acids for β-oxidation or lipid synthesis. Downregulation by NaB may redirect fatty acids away from triglyceride synthesis and toward oxidation, complementing lipophagy-mediated lipid clearance.
 
-**Autophagy Machinery**
+**3.3 - Autophagy Machinery**
 
 **MAP1LC3C (LC3C, log2FC = 1.17, padj = 0.021):** Member of the ATG8 family essential for autophagosome formation. Upregulation indicates activation of the autophagic program, consistent with NaB-mediated restoration of lipophagy.
 
 **CTSL (Cathepsin L, log2FC = -0.39, padj = 0.0006):** Lysosomal cysteine protease crucial for completing autophagic flux by degrading autophagosome contents. While paradoxically downregulated, other cathepsins (CTSF, CTSB) were upregulated, suggesting lysosomal remodeling rather than global suppression.
 
-**Stress Response and Metabolic Adaptation**
+**3.4 - Stress Response and Metabolic Adaptation**
 
 **GDF15 (Growth Differentiation Factor 15, log2FC = 1.2, padj = 2e-38):** Stress-responsive cytokine induced by mitochondrial dysfunction. Elevated in DKD as a compensatory nefroprotective response (anti-inflammatory, preserves Klotho expression). NaB-induced upregulation reflects activation of adaptive stress pathways.
 
 **CYP24A1 (Cytochrome P450 24A1, log2FC = 2.1, padj = 5e-145):** Vitamin D-degrading enzyme regulating calcium homeostasis. ~4-fold increase may represent metabolic rebalancing under glucolipotoxic stress.
 
-**Immune Modulation**
+**3.5 - Immune Modulation**
 
 **CCL20 (Chemokine CCL20, log2FC = 2.3, padj = 7e-35):** Pro-inflammatory chemokine recruiting immune cells via CCR6. Elevated in DKD, promoting tubular inflammation. NaB-induced increase may reflect immune remodeling toward regulatory T cell recruitment rather than pure pro-inflammatory signaling.
 
@@ -105,7 +105,6 @@ Lysosome organization (27 genes, FDR = 0.15)
 Autophagosome assembly (29 genes, FDR = 0.11)
 Selective autophagy (25 genes, FDR = 0.12)
 Proteasome pathway (KEGG, 38 genes, FDR = 1e-18)
-
 These results directly confirm NaB-induced activation of autophagy/lipophagy machinery, supporting the proposed PP2A-TFEB mechanism.
 
 **4.2 - Lipid Metabolism Remodeling**
@@ -115,14 +114,12 @@ Lipid droplet organization (10 genes, FDR = 0.22)
 Lipid homeostasis (41 genes, FDR = 0.13)
 Phospholipid transport (30 genes, FDR = 0.03)
 Regulation of membrane lipid distribution (21 genes, FDR = 0.02)
-
 Massive enrichment of lipid metabolism pathways indicates coordinated remodeling of cellular lipid handling, consistent with resolution of ectopic lipid deposition.
 
 **4.3 - Lysosomal Function (KEGG)**
 
 Lysosome pathway (69 genes, FDR = 2e-04)
 Lysosomal transport (37 genes, GO FDR = 0.03)
-
 Confirms transcriptional upregulation of lysosomal genes, likely mediated by TFEB activation.
 
 **4.4 - Epithelial Integrity and Cellular Adhesion**
@@ -130,14 +127,12 @@ Confirms transcriptional upregulation of lysosomal genes, likely mediated by TFE
 Cell-substrate adhesion (97 genes, FDR = 0.0002)
 Maintenance of epithelial cell polarity (7 genes, FDR = 0.015)
 Epithelial cell migration (84 genes, FDR = 0.055)
-
 Supports protective effects on tubular epithelial barrier function, complementing CLDN4 upregulation.
 
 **4.5 - Cellular Stress Response**
 
 Cellular response to chemical stress (98 genes, FDR = 0.002)
 Response to fatty acid (9 genes, FDR = 0.55)
-
 Indicates activation of adaptive stress response programs under glucolipotoxic conditions.
 
 ## Discussion
