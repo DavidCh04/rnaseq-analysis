@@ -15,7 +15,9 @@ This project implements an RNA-seq analysis workflow using publicly available da
 
 **Experimental design:** RNA-seq was performed on GLT-stimulated HK-2 cells, comparing three biological replicates treated with sodium nutyrate (NaB_GLT) against three untreated controls (BSA_GLT).
 
-**Sample information:** A clean sample annotation table `data/samples.csv` was generated form the original SRA metadata and contains the run accesions an experimental conditions used in this analysis.
+**Sample information:** Two metadata files are provided:
+- `data/samples.csv`: original SRA metadata with study nomenclature
+- `metadata.csv`: processed metadata used for DESeq2 analysis (standardized condition names)
 
 ## Objective
 Identify differentially expressed genes and biological pathways modulated by sodium butyrate in glucolipotoxic conditions to validate the proposed PP2A-TFEB-lipophagy mechanism and discover additional protective pathways.
@@ -225,3 +227,4 @@ Key dependencies:
 - **Original study:** PMID: 41337753
 - **DESeq2:** Love et al., Genome Biology 2014 (PMID: 25516281)
 - **clusterProfiler:** Yu et al., OMICS 2012 (PMID: 22455463)
+
